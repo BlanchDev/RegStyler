@@ -16,7 +16,7 @@ RegStyler is a powerful web application designed to help users customize and opt
 
 - React
 - Vite
-- Firebase (Authentication and Database)
+- Firebase (Authentication)
 - SCSS for styling
 - React Router for navigation
 - Framer Motion for animations
