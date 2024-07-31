@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CuteDino";
+    src: url("/fonts/CuteDino.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BondStory";
+    src: url("/fonts/BondStory.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GaldienRounded";
+    src: url("/fonts/GaldienRounded.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    min-width: 0;
+    min-height: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    word-break: break-word;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    ::selection {
+        background-color: #691e59;
+        color: #ffffff;
+    }
+}
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=password] {
+    all: unset;
+}
+
+button {
+    -webkit-user-select: none !important;
+    user-select: none !important;
+}
+
+button,
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.15 !important;
+}
+
+img {
+    -webkit-user-select: none !important;
+    user-select: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    white-space: pre-line;
+}
+
+
+.w100 {
+    width: 100%;
+}
+
+.pageW {
+    width: 1240px;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+.hidden-form-btn {
+    display: none;
+}
+
+
+
+/* flex */
+
+$directions: row, column, row-reverse, column-reverse;
+$align-items-values: (
+    c: center,
+    fs: flex-start,
+    fe: flex-end
+);
+$justify-content-values: (
+    c: center,
+    fs: flex-start,
+    fe: flex-end,
+    sb: space-between,
+    sa: space-around
+);
+$gap-values: (
+    5: 5px,
+    7: 7px,
+    10: 10px,
+    15: 15px,
+    20: 20px,
+    25: 25px,
+    30: 30px,
+    35: 35px,
+    40: 40px,
+    45: 45px,
+    50: 50px
+);
+
+@each $direction in $directions {
+    .#{$direction} {
+        display: flex;
+        flex-direction: $direction;
+    }
+}
+
+@each $alignItem-key, $alignItem-value in $align-items-values {
+    .ai#{$alignItem-key} {
+        align-items: $alignItem-value;
+    }
+}
+
+@each $justifyContent-key, $justifyContent-value in $justify-content-values {
+    .jc#{$justifyContent-key} {
+        justify-content: $justifyContent-value;
+    }
+}
+
+@each $gap-key, $gap-value in $gap-values {
+    .gap#{$gap-key} {
+        gap: $gap-value;
+    }
+}
+
+/* flex end */

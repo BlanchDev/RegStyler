@@ -1,0 +1,51 @@
+.screennotifi {
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: wait;
+
+  &.success {
+    background-color: #007255;
+  }
+
+  &.error {
+    background-color: #6b0000;
+  }
+
+  &.warning {
+    background-color: #815400;
+  }
+
+  &.info {
+    background-color: #2e0058;
+  }
+
+  .timer {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    font-weight: bold;
+  }
+
+  .close {
+    position: relative;
+    z-index: 100;
+    font-size: 2.5em;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover {
+      color: indianred;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.reg-switch {
+  width: 100%;
+  height: 165px;
+  padding: 25px;
+  outline: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.reg-switch.reg-switch-custom {
+  outline: 2px solid rgba(105, 88, 29, 0.4);
+}
+
+.reg-switch .reg-switch-header {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.reg-switch .reg-switch-header label {
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.reg-switch .reg-switch-header input[type="checkbox"]:not(:checked) + label {
+  color: white;
+}
+
+.reg-switch .reg-switch-header input[type="checkbox"] {
+  all: unset;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  min-width: 50px;
+  min-height: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.reg-switch .reg-switch-header input[type="checkbox"]:not(:checked) {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.reg-switch .reg-switch-header input[type="checkbox"]:not(:checked)::before {
+  z-index: 1;
+  position: absolute;
+  top: 2.5px;
+  left: calc(0% + 5px);
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.reg-switch .reg-switch-header input[type="checkbox"]:checked {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.reg-switch .reg-switch-header input[type="checkbox"]:checked::after {
+  position: absolute;
+  top: 2.5px;
+  left: calc(100% - 25px);
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.reg-switch .reg-switch-desc {
+  width: calc(100% - 50px);
+  height: 100%;
+}
+
+.reg-switch .reg-switch-desc .reg-desc-limited {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}
+
+.reg-switch .reg-switch-footer {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left .reg-switch-category {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left .reg-switch-category.system {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left .reg-switch-category.graphic {
+  color: rgba(255, 184, 126, 0.65);
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left .reg-switch-category.internet {
+  color: rgba(255, 252, 85, 0.65);
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left .reg-switch-category.privacy {
+  color: rgba(174, 124, 255, 0.65);
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-left .reg-switch-category.other {
+  color: rgba(255, 85, 184, 0.65);
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-right {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.reg-switch .reg-switch-footer .reg-switch-footer-right .reg-switch-date {
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.3);
+}
+/*# sourceMappingURL=RegSwitch.css.map */

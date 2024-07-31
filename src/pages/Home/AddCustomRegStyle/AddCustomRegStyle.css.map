@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,WAAW;EACnB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "AddCustomRegStyle.scss"
+    ],
+    "names": [],
+    "file": "AddCustomRegStyle.css"
+}

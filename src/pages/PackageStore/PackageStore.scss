@@ -1,0 +1,139 @@
+.packages-store-layout {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+
+  section {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+  }
+
+  .packages {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #0c0f19;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fc1694;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 1600px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 1366px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .package {
+      width: 100%;
+      height: 250px;
+      outline: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.1);
+
+      .header {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+        .title {
+          width: 100%;
+          height: max-content;
+          font-size: 1.2em;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #18c398;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        .description {
+          width: 100%;
+          height: 100%;
+
+          p {
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.65);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 7;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .footer {
+        width: 125px;
+        min-width: 125px;
+        height: 100%;
+        padding: 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
+
+        .userData {
+          width: max-content;
+          height: max-content;
+
+          .userInfo {
+            width: 100%;
+            height: max-content;
+
+            .nickname {
+              width: 100px;
+              height: max-content;
+              font-size: 0.9em;
+              font-weight: bold;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              text-align: center;
+
+              &.admin {
+                color: #fc1694;
+              }
+            }
+
+            .role {
+              font-size: 0.75em;
+              color: rgba(255, 255, 255, 0.6);
+            }
+
+            .created-at {
+              font-size: 0.65em;
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

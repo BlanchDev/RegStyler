@@ -1,0 +1,53 @@
+.screennotifi {
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: wait;
+}
+
+.screennotifi.success {
+  background-color: #007255;
+}
+
+.screennotifi.error {
+  background-color: #6b0000;
+}
+
+.screennotifi.warning {
+  background-color: #815400;
+}
+
+.screennotifi.info {
+  background-color: #2e0058;
+}
+
+.screennotifi .timer {
+  color: black;
+  background: white;
+  padding: 5px;
+  border-radius: 50%;
+  min-width: 40px;
+  min-height: 40px;
+  font-weight: bold;
+}
+
+.screennotifi .close {
+  position: relative;
+  z-index: 100;
+  font-size: 2.5em;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.screennotifi .close:hover {
+  color: indianred;
+}
+/*# sourceMappingURL=useScreenNotifi.css.map */

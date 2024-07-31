@@ -1,0 +1,249 @@
+.package-details-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.package-details-layout section {
+  width: 100%;
+  height: calc(100% - 65px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.package-details-layout .filter-controls {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0px 15px 0px 15px;
+}
+
+.package-details-layout .filter-controls .select {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.package-details-layout .header {
+  width: calc(100% - 10px);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 260px;
+  max-height: 260px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.package-details-layout .header .title {
+  width: 100%;
+  height: 80px;
+  min-height: 80px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 25px 5px 25px;
+}
+
+@media (max-width: 800px) {
+  .package-details-layout .header .title {
+    height: 60px;
+    min-height: 60px;
+  }
+}
+
+.package-details-layout .header .title .title-text {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 5px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #18c398;
+}
+
+@media (max-width: 800px) {
+  .package-details-layout .header .title .title-text {
+    font-size: 1.5em;
+  }
+}
+
+.package-details-layout .header .package-description {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.package-details-layout .header .package-description .creator {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 30px 30px 0 30px;
+}
+
+.package-details-layout .header .package-description .creator .creator-details .nickname {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.package-details-layout .header .package-description .creator .creator-details .nickname.admin {
+  color: #fc1694;
+}
+
+.package-details-layout .header .package-description .creator .creator-details .role {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.package-details-layout .header .package-description .creator .creator-details .created-at {
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.package-details-layout .header .package-description .description {
+  width: 100%;
+  height: calc(100% - 50px);
+  min-height: 100px;
+  padding: 5px 25px 5px 25px;
+  font-size: 1.2em;
+  overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+  .package-details-layout .header .package-description .description {
+    font-size: 0.8em;
+  }
+}
+
+.package-details-layout .header .package-description .description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.package-details-layout .header .package-description .description::-webkit-scrollbar-track {
+  background: #0c0f19;
+}
+
+.package-details-layout .header .package-description .description::-webkit-scrollbar-thumb {
+  background-color: #fc1694;
+  border-radius: 10px;
+}
+
+.package-details-layout .optimizations-layout {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.package-details-layout .optimizations-layout::-webkit-scrollbar {
+  width: 8px;
+}
+
+.package-details-layout .optimizations-layout::-webkit-scrollbar-track {
+  background: #0c0f19;
+}
+
+.package-details-layout .optimizations-layout::-webkit-scrollbar-thumb {
+  background-color: #fc1694;
+  border-radius: 10px;
+}
+
+@media (max-width: 1600px) {
+  .package-details-layout .optimizations-layout {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1366px) {
+  .package-details-layout .optimizations-layout {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .package-details-layout .optimizations-layout {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.package-details-layout .optimizations-layout .owner-tag {
+  padding: 5px;
+  grid-column: 1 / -1;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 1em;
+}
+
+@media (max-width: 800px) {
+  .package-details-layout .optimizations-layout .owner-tag {
+    font-size: 0.6em;
+    padding: 3px;
+  }
+}
+
+.package-details-layout .optimizations-layout .owner-tag .fastcheck-btns {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.package-details-layout .optimizations-layout .owner-tag .fastcheck-btns .check-button {
+  font-size: 0.9em;
+  border-radius: 10px;
+  padding: 1px 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.package-details-layout .optimizations-layout .owner-tag .fastcheck-btns .check-button.check {
+  background-color: rgba(10, 114, 19, 0.25);
+}
+
+.package-details-layout .optimizations-layout .owner-tag .fastcheck-btns .check-button.uncheck {
+  background-color: rgba(117, 63, 84, 0.25);
+}
+
+.package-details-layout .optimizations-layout .owner-tag .fastcheck-btns .check-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.package-details-layout .package-footer {
+  -webkit-box-shadow: 0 -1px rgba(252, 22, 148, 0.3);
+          box-shadow: 0 -1px rgba(252, 22, 148, 0.3);
+  width: 100%;
+  height: 65px;
+  min-height: 65px;
+  padding: 0 20px;
+}
+
+@media (max-width: 800px) {
+  .package-details-layout .package-footer {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=PackageDetails.css.map */

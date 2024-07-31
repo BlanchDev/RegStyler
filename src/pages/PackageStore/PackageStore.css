@@ -1,0 +1,165 @@
+.packages-store-layout {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.packages-store-layout section {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.packages-store-layout .packages {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.packages-store-layout .packages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.packages-store-layout .packages::-webkit-scrollbar-track {
+  background: #0c0f19;
+}
+
+.packages-store-layout .packages::-webkit-scrollbar-thumb {
+  background-color: #fc1694;
+  border-radius: 10px;
+}
+
+@media (max-width: 1600px) {
+  .packages-store-layout .packages {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1366px) {
+  .packages-store-layout .packages {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .packages-store-layout .packages {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.packages-store-layout .packages .package {
+  width: 100%;
+  height: 250px;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.packages-store-layout .packages .package .header {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.packages-store-layout .packages .package .header .title {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #18c398;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.packages-store-layout .packages .package .header .description {
+  width: 100%;
+  height: 100%;
+}
+
+.packages-store-layout .packages .package .header .description p {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  text-overflow: ellipsis;
+}
+
+.packages-store-layout .packages .package .footer {
+  width: 125px;
+  min-width: 125px;
+  height: 100%;
+  padding: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.packages-store-layout .packages .package .footer .userData {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.packages-store-layout .packages .package .footer .userData .userInfo {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.packages-store-layout .packages .package .footer .userData .userInfo .nickname {
+  width: 100px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 0.9em;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+
+.packages-store-layout .packages .package .footer .userData .userInfo .nickname.admin {
+  color: #fc1694;
+}
+
+.packages-store-layout .packages .package .footer .userData .userInfo .role {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.packages-store-layout .packages .package .footer .userData .userInfo .created-at {
+  font-size: 0.65em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.packages-store-layout .packages .package .footer .button {
+  width: 100%;
+}
+/*# sourceMappingURL=PackageStore.css.map */

@@ -1,0 +1,97 @@
+.auth-btns {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.sign-in {
+  position: relative;
+  top: -25px;
+  background-color: white;
+  color: black;
+  width: calc(100% - 40px);
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 0.9em;
+}
+
+.sign-in:hover {
+  background-color: #002800;
+  color: white;
+  outline: 1px solid green;
+}
+
+.sign-in img {
+  width: 20px;
+  height: 20px;
+}
+
+.user-panel {
+  width: 100%;
+  height: 80px;
+  background-color: #14192d;
+  color: white;
+  padding: 10px;
+}
+
+.user-panel .user-details {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
+.user-panel .user-details .user-photo {
+  position: relative;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.user-panel .user-info {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
+.user-panel .user-info .user-name {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.user-panel .user-info .user-name.user {
+  color: whitesmoke;
+}
+
+.user-panel .user-info .user-name.admin {
+  color: #fc1694;
+}
+
+.user-panel .user-info .user-role {
+  font-size: 0.65em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.panel-btns {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
+.panel-btns .panel-btn {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.panel-btns .sign-out-btn:hover {
+  color: indianred;
+}
+/*# sourceMappingURL=AuthBtn.css.map */

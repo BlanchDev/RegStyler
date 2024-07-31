@@ -1,0 +1,46 @@
+.home-header {
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+
+@media (max-width: 800px) {
+  .home-header .home-header-content {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .home-header .tabs .tab {
+    padding: 10px 5px !important;
+    font-size: 0.7em !important;
+  }
+}
+
+.home-header .home-header-content {
+  width: 100%;
+  -webkit-box-shadow: 0 1px rgba(252, 22, 148, 0.3);
+          box-shadow: 0 1px rgba(252, 22, 148, 0.3);
+}
+
+.home-header .tabs {
+  width: 100%;
+}
+
+.home-header .tabs .tab {
+  padding: 5px 20px 15px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #dab7c9;
+}
+
+.home-header .tabs .tab:hover {
+  color: #fc1694;
+}
+
+.home-header .tabs .tab.active {
+  color: #fc1694;
+  -webkit-box-shadow: 0 3px #fc1694;
+          box-shadow: 0 3px #fc1694;
+}
+/*# sourceMappingURL=HomeHeader.css.map */

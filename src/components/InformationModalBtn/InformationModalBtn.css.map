@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,GAAG,EAAE,KAAK;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,wBAAwB;EAC/B,OAAO,EAAE,GAAG,CAAC,KAAK,CAAC,wBAAwB;EAC3C,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "InformationModalBtn.scss"
+    ],
+    "names": [],
+    "file": "InformationModalBtn.css"
+}

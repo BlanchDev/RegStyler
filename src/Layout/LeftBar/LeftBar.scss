@@ -1,0 +1,91 @@
+.leftbar {
+  width: 240px;
+  max-width: 240px;
+  min-width: 240px;
+  height: 100vh;
+  background-color: #1b2033;
+  -webkit-user-select: none;
+  user-select: none;
+
+
+  @media (max-width: 800px) {
+    display: none !important;
+  }
+
+  .leftbar-content {
+    width: 100%;
+    height: 100%;
+
+    .leftbar-logo {
+      width: 100%;
+      height: max-content;
+      background-color: #0c0f19;
+      padding: 20px 0;
+
+      .logo-text {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 2em;
+        font-family: "CuteDino", sans-serif !important;
+
+        background: #83276f;
+        background: linear-gradient(to left, #83276f 40%, #18C398 60%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        text-shadow: 2px 2px 10px rgba(50, 50, 50, 0.4);
+
+        img {
+          position: relative;
+          top: -5px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .leftbar-menu {
+      width: 100%;
+      height: 100%;
+
+      .leftbar-header {
+        width: 100%;
+        height: max-content;
+
+        .leftbar-nav {
+          width: 100%;
+          height: max-content;
+          font-size: 1.2em;
+
+          .navBtn {
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+
+            &.active {
+              background-color: #282d3f;
+            }
+
+            .navBtn-icon {
+              width: 20px;
+              height: 20px;
+              margin: 0 15px;
+            }
+
+            .navBtn-text {
+              width: 100%;
+              height: 100%;
+              font-size: 0.85em;
+            }
+          }
+        }
+      }
+
+      .leftbar-footer {
+        width: 100%;
+        height: max-content;
+      }
+    }
+  }
+}
