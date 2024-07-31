@@ -56,7 +56,7 @@ RegStyler is a powerful web application designed to help users customize and opt
    bun install
    ```
 
-4. Create a `.env` file in the root directory and add your Firebase configuration:
+4. Create a `.env.local` file in the root directory and add your Firebase configuration:
 
    ```env
    VITE_API_KEY=
