@@ -20,7 +20,7 @@ RegStyler is a powerful web application designed to help users customize and opt
 - SCSS for styling
 - React Router for navigation
 - Framer Motion for animations
-- PHP for backend (but not shared code)
+- PHP for backend
 - Live Sass Compiler ([VS Marketplace Link](https://marketplace.cursorapi.com/items?itemName=ritwickdey.live-sass))
 
 ## Getting Started

@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# HTTP'den HTTPS'e yönlendir
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# .php uzantılarını gizle
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# react-router-dom için
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# Diğer ayarlar
+AddDefaultCharset UTF-8
+php_value session.save_path /tmp
+php_value session.gc_maxlifetime 172800
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Preload all font files in /fonts/ directory with appropriate 'as' value
+    <FilesMatch "^/fonts/.*\.(ttf|otf|eot|woff|woff2)$">
+        Header set Link "</fonts/%{REQUEST_FILENAME}>; rel=preload; as=font; crossorigin=anonymous"
+    </FilesMatch>
+</IfModule>
